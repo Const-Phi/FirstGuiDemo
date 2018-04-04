@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:FirstGuiDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    <Grid x:Name="MainGrid">
+        <!--<Button x:Name="Accept" Content="Ok" Click="ButtonBase_OnClick" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center"/>-->
     </Grid>
 </Window>

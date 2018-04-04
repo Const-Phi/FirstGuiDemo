@@ -20,9 +20,28 @@ namespace FirstGuiDemo
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Button Accept;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            Accept = new Button
+            {
+                Content = "Ok",
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center
+            };
+            Accept.Click += ButtonBase_OnClick;
+
+
+            MainGrid.Children.Add(Accept);
+        }
+
+        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Hello world!", "Local title", 
+                MessageBoxButton.YesNoCancel, MessageBoxImage.Information);
         }
     }
 }
