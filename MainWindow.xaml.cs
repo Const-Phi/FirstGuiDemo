@@ -2,22 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
 using FirstGuiDemo.Tricks;
+
 using static System.Math;
 
 namespace FirstGuiDemo
 {
+    /// <inheritdoc cref="Window" />
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -25,7 +19,7 @@ namespace FirstGuiDemo
     {
         private Dictionary<string, Func<double, double, double>> operations;
 
-        private StringBuilder buffer = new StringBuilder();
+        private readonly StringBuilder buffer = new StringBuilder();
 
         public MainWindow()
         {
