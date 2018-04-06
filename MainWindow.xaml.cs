@@ -96,7 +96,8 @@ namespace FirstGuiDemo
 
             var result = new Button
             {
-                Content = "Result"
+                Content = "Result",
+                FontFamily = new FontFamily("Monospace"),
             };
             result.Click += ResultOnClick;
             result.AddTo(MainGrid, row: 2, column: 1);
