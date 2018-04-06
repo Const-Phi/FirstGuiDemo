@@ -6,9 +6,34 @@
         xmlns:local="clr-namespace:FirstGuiDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid x:Name="MainGrid">
-        <!--<Button x:Name="Accept" Content="Ok" Click="ButtonBase_OnClick" 
+    <Grid x:Name="MainGrid" ShowGridLines="True">
+
+        <!--<Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Button x:Name="Btn0" Content="btn_0" Click="ButtonBase_OnClick" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Grid.Column="1"/>
+
+        <Button Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="3" x:Name="Btn1" Content="Btn1" Click="ButtonBase_OnClick" 
                 HorizontalAlignment="Center" 
                 VerticalAlignment="Center"/>-->
+
+        <!--<Button Grid.Row="1" Grid.Column="1" x:Name="Btn2" Content="Btn2" Click="ButtonBase_OnClick" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center"/>-->
+        
+
     </Grid>
 </Window>
